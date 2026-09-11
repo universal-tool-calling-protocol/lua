@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111112">
+  <meta name="description" content="Connect your Lua apps and AI agents to tools over 12 native transports. Discover, search, and call with lua-utcp, the Lua implementation of UTCP 1.1.">
+  <meta property="og:title" content="Lua UTCP — Every tool. Just Lua.">
+  <meta property="og:description" content="Twelve native transports. One elegant Lua client. Meet the Universal Tool Calling Protocol for Lua.">
+  <meta property="og:image" content="./assets/lua-utcp-logo.svg">
+  <meta property="og:type" content="website">
+  <title>Lua UTCP — Every tool. Just Lua.</title>
+  <link rel="icon" href="./assets/lua-utcp-logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./" aria-label="Lua UTCP home"><span class="brand-symbol"><img src="./assets/lua-utcp-logo.svg" alt="" width="240" height="240"></span><span>lua-utcp<span class="brand-period">.</span></span></a>
+      <nav class="desktop-nav" aria-label="Main navigation"><a href="#why-utcp">Why UTCP</a><a href="#protocols">Protocols</a><a href="./docs.html">Docs <span class="nav-arrow">↗</span></a></nav>
+      <div class="header-actions"><button class="search-trigger" aria-label="Search documentation"><span data-icon="search"></span><kbd>⌘ K</kbd></button><a class="github-link" href="https://github.com/universal-tool-calling-protocol/lua-utcp" target="_blank" rel="noopener noreferrer" aria-label="Lua UTCP on GitHub (opens in a new tab)"><span data-icon="github"></span></a><a class="button button-small button-outline header-cta" href="#quickstart">Get started <span>↗</span></a><button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation"><span data-icon="menu"></span></button></div>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#why-utcp">Why UTCP</a><a href="#protocols">Protocols</a><a href="#quickstart">Quick start</a><a href="./docs.html">Documentation</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <a class="release-tag" href="./docs.html?topic=security"><span class="status-dot"></span> UTCP 1.1 · LUA 5.3 / 5.4 <span class="release-arrow">↗</span></a>
+        <h1 id="hero-heading">Every tool.<br><span class="lua-text">Just Lua.</span></h1>
+        <p class="hero-description">Your tools already speak a language.<br>Now your Lua app speaks it, too.</p>
+        <p class="hero-detail">Discover, search, and call tools over their native protocols.<br class="desktop-break"> One elegant client. A lot less glue code.</p>
+        <div class="hero-buttons"><a class="button button-primary" href="#quickstart">Start building <span data-icon="arrow-right"></span></a><a class="button button-quiet" href="https://github.com/universal-tool-calling-protocol/lua-utcp" target="_blank" rel="noopener noreferrer"><span data-icon="github"></span> View on GitHub <span class="external-arrow">↗</span></a></div>
+        <div class="install-command"><span class="terminal-dollar">$</span><code>luarocks make lua-utcp-1.8-1.rockspec</code><button class="copy-button" data-copy="luarocks make lua-utcp-1.8-1.rockspec" aria-label="Copy LuaRocks command (run in the cloned repository)"><span data-icon="copy"></span></button></div>
+        <a class="install-context" href="./docs.html?topic=installation">Run in the cloned repository · Installation guide ↗</a><div class="hero-footnote"><span class="tiny-diamond">◇</span> Open source. Small by nature. MPL-2.0 licensed.</div>
+      </div>
+      <div class="hero-visual" aria-label="Lua UTCP connects tools over native protocols">
+        <span class="visual-coordinate coordinate-top">ONE CLIENT. EVERY CONNECTION.</span>
+        <div class="orbit-grid"></div><div class="orbit-glow"></div>
+        <svg class="orbit-lines" viewBox="0 0 550 520" fill="none" aria-hidden="true">
+          <circle cx="275" cy="249" r="175" stroke="currentColor" stroke-dasharray="3 6"/>
+          <circle cx="275" cy="249" r="227" stroke="currentColor"/>
+          <path d="M275 77V173M106 159L220 215M435 149L328 213M98 342L221 288M443 335L326 284M275 439V331" stroke="currentColor"/>
+          <path d="M275 106V147M151 180L187 198M389 175L355 196M156 316L189 302M390 310L355 296M275 359V393" stroke="#ad3b48" stroke-width="1.5"/>
+          <g fill="#ed5363"><circle cx="275" cy="126" r="3"/><circle cx="169" cy="189" r="3"/><circle cx="374" cy="184" r="3"/><circle cx="171" cy="309" r="3"/><circle cx="372" cy="303" r="3"/><circle cx="275" cy="377" r="3"/></g>
+          <path d="M35 35h12m-6-6v12M503 35h12m-6-6v12M35 483h12m-6-6v12M503 483h12m-6-6v12" stroke="#555558"/>
+        </svg>
+        <div class="orbit-center"><div class="hero-logo-crop"><img src="./assets/lua-utcp-logo.svg" alt="Lua UTCP moon and orbit logo" width="240" height="240" fetchpriority="high"></div><span class="orbit-wordmark">lua-utcp<span>.</span></span><code>require("utcp")</code></div>
+        <div class="orbit-nodes" role="group" aria-label="All 12 native transports"></div>
+        <span class="visual-coordinate coordinate-bottom"><span></span> NATIVE PROTOCOLS. SHARED POSSIBILITIES.</span>
+      </div>
+    </section>
+    <section class="stats container" aria-label="Lua UTCP at a glance">
+      <div class="stat"><strong>12<span>↗</span></strong><div>Native transports<small>Speak every tool’s language</small></div></div>
+      <div class="stat"><strong>1.1</strong><div>UTCP specification<small>Built on an open standard</small></div></div>
+      <div class="stat"><strong>5.3<span> / 5.4</span></strong><div>Lua compatibility<small>A lightweight, familiar core</small></div></div>
+      <div class="stat"><strong class="license-stat">MPL<span>2.0</span></strong><div>Open source<small>Yours to build with</small></div></div>
+    </section>
+    <section class="why-section container section-space" id="why-utcp" aria-labelledby="why-heading">
+      <div class="section-heading"><div><span class="eyebrow"><span></span> LESS PLUMBING. MORE BUILDING.</span><h2 id="why-heading">Your next idea doesn’t need<br> another integration layer.</h2></div><p>Keep your APIs. Keep your infrastructure.<br>Let a little Lua make the connection.</p></div>
+      <div class="feature-grid">
+        <article class="feature"><div class="feature-top"><span class="feature-icon" data-icon="route"></span><span class="feature-number">01</span></div><h3>Straight to the source.</h3><p>Call tools over the protocols they already use. HTTP, WebSocket, gRPC, or a local command — go directly from your app to your tool.</p><a href="#protocols">Explore the transports <span>↗</span></a></article>
+        <article class="feature"><div class="feature-top"><span class="feature-icon" data-icon="scan"></span><span class="feature-number">02</span></div><h3>Discover. Then do.</h3><p>Load a UTCP manual from a provider or register one directly. Find the right tool with local search, then call it through one consistent Lua interface.</p><a href="./docs.html?topic=discovery">Meet tool discovery <span>↗</span></a></article>
+        <article class="feature"><div class="feature-top"><span class="feature-icon" data-icon="shield"></span><span class="feature-number">03</span></div><h3>Trust is explicit.</h3><p>Protocol allowlists are checked at registration and execution. Add a client-side Guard to allow, deny, or review tool calls before dispatch.</p><a href="./docs.html?topic=security">See how it’s secured <span>↗</span></a></article>
+      </div>
+    </section>
+    <section class="protocol-section container" id="protocols" aria-labelledby="protocol-heading">
+      <div class="protocol-panel"><div class="section-heading"><div><span class="eyebrow"><span></span> ONE API. MANY POSSIBILITIES.</span><h2 id="protocol-heading">Speaks your stack.</h2></div><p>From a simple REST endpoint to a real-time stream.<br>Pick a protocol. The Lua stays familiar.</p></div>
+      <div class="protocol-tabs" role="tablist" aria-label="Choose a transport"></div>
+      <div class="protocol-detail" id="protocol-detail" role="tabpanel" aria-labelledby="tab-http" tabindex="0">
+        <div class="protocol-info"><span class="protocol-category" id="protocol-category"></span><h3 id="protocol-title"></h3><p id="protocol-description"></p><div class="protocol-tags" id="protocol-tags"></div><a class="text-link" id="protocol-docs" href="./docs.html?topic=transports">Read the transport guide <span>↗</span></a></div>
+        <div class="code-window protocol-code">
+          <div class="protocol-example-tabs" role="tablist" aria-label="Choose an example">
+            <button role="tab" id="example-manual" aria-controls="protocol-example-panel" aria-selected="true" data-protocol-example="manual">Manual</button>
+            <button role="tab" id="example-lua" aria-controls="protocol-example-panel" aria-selected="false" tabindex="-1" data-protocol-example="lua">Lua</button>
+            <button role="tab" id="example-codemode" aria-controls="protocol-example-panel" aria-selected="false" tabindex="-1" data-protocol-example="codemode">Code Mode</button>
+          </div>
+          <div id="protocol-example-panel" role="tabpanel" aria-labelledby="example-manual">
+            <p class="protocol-example-caption" id="protocol-example-caption"></p>
+            <div class="code-toolbar"><span><span class="file-dot"></span> <span id="protocol-filename">http.manual.json</span></span><button class="copy-button" id="copy-protocol" aria-label="Copy transport example"><span data-icon="copy"></span></button></div>
+            <pre tabindex="0" aria-label="Transport example code"><code id="protocol-code"></code></pre>
+            <div class="code-footnote"><span class="code-language"><span aria-hidden="true"></span><b id="protocol-language">JSON</b></span><span id="protocol-note"></span></div>
+          </div>
+        </div>
+      </div>
+      </div><p class="transport-note">One client, twelve transports. <span>One canonical registry for your applications and AI agents.</span><a href="./docs.html?topic=transports">The full picture <span>↗</span></a></p>
+    </section>
+    <section class="quickstart-section" id="quickstart" aria-labelledby="quickstart-heading"><div class="container quickstart-inner"><div class="quickstart-copy"><span class="eyebrow"><span></span> SMALL LANGUAGE. QUICK START.</span><h2 id="quickstart-heading">From zero to<br><span>“that was easy.”</span></h2><p>Three steps to your first tool call.<br>A familiar API. A native connection.</p><ol class="quickstart-steps"><li><span>01</span><div><h3>Install with LuaRocks</h3><p>Clone the repository, then build the rockspec.</p></div></li><li><span>02</span><div><h3>Connect your tools</h3><p>Your client discovers the available tools.</p></div></li><li><span>03</span><div><h3>Make the call</h3><p>Get a result. Get on with building.</p></div></li></ol><a class="quickstart-docs" href="./docs.html">Follow the full quick start <span>↗</span></a></div><div class="quickstart-code-wrap"><div class="code-window quickstart-code"><div class="quickstart-tabs" role="tablist" aria-label="Installation method"><button role="tab" id="quick-luarocks" aria-selected="true" aria-controls="quickstart-code-panel" data-install="luarocks">LuaRocks</button><button role="tab" id="quick-source" aria-selected="false" aria-controls="quickstart-code-panel" data-install="source" tabindex="-1">From source</button><span>QUICK START</span></div><div class="installation-line"><div><span id="install-comment"># In the cloned lua-utcp repository</span><code id="install-code">luarocks make lua-utcp-1.8-1.rockspec</code></div><button class="copy-button" id="copy-install" data-copy='luarocks make lua-utcp-1.8-1.rockspec' aria-label="Copy installation command"><span data-icon="copy"></span></button></div><div class="quickstart-code-body" id="quickstart-code-panel" role="tabpanel" aria-labelledby="quick-luarocks" tabindex="0"><div class="example-filename"><span><span data-icon="code"></span> app.lua</span><button class="copy-button" id="copy-quickstart" aria-label="Copy quick start example"><span data-icon="copy"></span></button></div><pre><code id="quickstart-code"></code></pre></div><div class="quickstart-code-footer"><span data-icon="check"></span> Familiar Lua. Native tool calls.</div></div><p class="quickstart-note">Use your own UTCP manual URL and tool name.<br>Lua 5.3 or 5.4. WebRTC needs a host-specific DataChannel adapter.</p></div></div></section>
+    <section class="community-section container"><div class="community-symbol"><span class="brand-symbol"><img src="./assets/lua-utcp-logo.svg" alt="" width="240" height="240" loading="lazy"></span></div><span class="eyebrow">BUILT IN THE OPEN. BETTER TOGETHER.</span><h2>A little Lua.<br>A world of connections.</h2><p>Build something useful. Share what you learn.<br>Help shape the way Lua connects to tools.</p><div class="community-buttons"><a class="button button-primary" href="https://github.com/universal-tool-calling-protocol/lua-utcp" target="_blank" rel="noopener noreferrer"><span data-icon="github"></span> Join us on GitHub <span>↗</span></a><a class="button button-quiet" href="https://www.utcp.io" target="_blank" rel="noopener noreferrer">Explore the protocol <span>↗</span></a></div></section>
+  </main>
+  <footer class="site-footer container"><a class="brand" href="./" aria-label="Lua UTCP home"><span class="brand-symbol"><img src="./assets/lua-utcp-logo.svg" alt="" width="240" height="240" loading="lazy"></span><span>lua-utcp<span class="brand-period">.</span></span></a><span class="footer-caption">Made for the joy of building.</span><div><a href="./docs.html">Documentation</a><a href="https://github.com/universal-tool-calling-protocol/lua-utcp" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://github.com/universal-tool-calling-protocol/lua-utcp/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MPL-2.0 License ↗</a></div></footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

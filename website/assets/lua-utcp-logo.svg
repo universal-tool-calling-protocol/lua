@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" fill="none">
+  <defs>
+    <linearGradient id="moon" x1="61" y1="60" x2="180" y2="192" gradientUnits="userSpaceOnUse"><stop stop-color="#c7dcff"/><stop offset=".46" stop-color="#729fff"/><stop offset="1" stop-color="#3560d4"/></linearGradient>
+    <linearGradient id="ring" x1="22" y1="178" x2="216" y2="52" gradientUnits="userSpaceOnUse"><stop stop-color="#5d88f2"/><stop offset=".6" stop-color="#bbd3ff"/><stop offset="1" stop-color="#6089ed"/></linearGradient>
+    <mask id="crescent"><rect width="240" height="240" fill="white"/><circle cx="153" cy="82" r="66" fill="black"/></mask>
+  </defs>
+  <circle cx="114" cy="124" r="76" fill="url(#moon)" mask="url(#crescent)"/>
+  <ellipse cx="120" cy="126" rx="110" ry="39" transform="rotate(-34 120 126)" stroke="url(#ring)" stroke-width="3"/>
+  <path d="M46 155a76 76 0 0 0 110 37" stroke="#d1e2ff" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+  <circle cx="190" cy="48" r="14" fill="#b9d2ff"/>
+  <circle cx="42" cy="174" r="5" fill="#ebf3ff"/>
+</svg>

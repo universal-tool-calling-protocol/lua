@@ -1,0 +1,10 @@
+{
+  "name": "lua-utcp-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix website run dev --",
+    "check": "npm --prefix website run check",
+    "build": "npm --prefix website run build",
+    "preview": "npm --prefix website run preview --"
+  }
+}
