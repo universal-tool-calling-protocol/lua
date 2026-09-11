@@ -1,10 +1,12 @@
 {
-  "name": "lua-utcp-workspace",
+  "name": "lua-utcp-website",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "npm --prefix website run dev --",
-    "check": "npm --prefix website run check",
-    "build": "npm --prefix website run build",
-    "preview": "npm --prefix website run preview --"
+    "dev": "node ./serve.mjs",
+    "start": "node ./serve.mjs",
+    "check": "node --check app.js && node --check data.js && node --check build.mjs && node --check serve.mjs",
+    "build": "node ./build.mjs",
+    "preview": "node ./serve.mjs --dir dist"
   }
 }
